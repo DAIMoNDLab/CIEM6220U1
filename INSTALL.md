@@ -10,8 +10,11 @@ Note: these installation steps will be largely based on Visual Studio Code as yo
 - [ ] In Visual Studio Code, select File -> Open folder.. and navigate to the folder containing this repository.
 - [ ] Open (any) one of the project's Jupyter notebooks
 - [ ] Click on "Select kernel..." on the top right of the Jupyter notebook screen, select "Python Environments..." and "Create new python environment". Create a ".conda" environment. Each time you open VSCode and this project, it will remember this is the right environment and always use it.
-- [ ] Open VSCode's terminal (menu bar -> Terminal) *after* creating and selecting your .conda enviroment. This will open a terminal window with the .conda environment pre-activated. 
-- [ ] Install *tud-sumo* by typing the following in the terminal window: pip install tud-sumo
+- [ ] Open VSCode's terminal (menu bar -> Terminal) *after* creating and selecting your .conda enviroment.
+- [ ] Activate your new enviromnent by typing the following in the terminal window: conda activate .conda/
+- [ ] Install *tud-sumo* by typing the following in the terminal window:
+    - git clone -b stable https://github.com/DAIMoNDLab/tud-sumo.git
+    - pip install ./tud-sumo
 - [ ] Install *mercury* by typing the following in the terminal window: pip install mercury
 
 ## Running steps
